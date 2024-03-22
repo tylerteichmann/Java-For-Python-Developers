@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * Startup
  */
@@ -7,52 +5,32 @@ public class Startup {
     static int classLocal;
 
     public static void main(String[] args) {
-        Circle circle = new Circle();
-        circle.radius = 5;
-        System.out.println("Circle 1s radius " + circle);
+        Student student = new Student();
+        student.major = Major.COMPUTERSCIENCE;
 
-        Circle circle2 = new Circle();
-        System.out.println("Circle 2s radius " + circle2);
+        Student student2 = new Student();
+        student2.major = Major.COMMUNICATIONS;
 
-        circle.radius = 10;
-        System.out.println();
-
-        int radius = 5;
-        System.out.println("radius1 " + radius);
-
-        int radius2 = radius;
-        System.out.println("radius2 " + radius2);
-
-        radius = 76;
-        System.out.println("radius2 " + radius2);
-
-        String name = new String("Tyler");
-        String name1 = new String("Tyler");
-
-        System.out.println(name.compareTo(name1));
-
-        System.out.println(name);
-
-        if (name == name1) {
-            System.out.println("True");
-        } else {
-            System.out.println("False");
+        if (student.major == Major.COMPUTERSCIENCE) {
+            System.out.println("Computers are the best");
         }
 
-        Student student = new Student();
-        System.out.println(student.name);
-        student.GPA = Float.parseFloat("4537.1");
-        System.out.println("Student GPA is " + student.GPA);
-        
-        // System.out.println(local);
-        System.out.println(classLocal);
 
+        Car car1 = new Car();
+        car1.horsePower = 14;
+        car1.style = CarStyle.SUV;
+        car1.type = PowerType.UNLEADED;
 
-        System.out.println(vowels(name1));
+        Car car2 = new Car();
+
+        Car car3 = new Car();
+        car3.horsePower = 32;
+
+        System.out.println(car1.horsePower);
+        System.out.println(car2.horsePower);
     }
 
     public static double harmonic (int n) {
-        
         int local = 0;
         System.out.println(local);
         System.out.println(classLocal);

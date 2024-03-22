@@ -1,6 +1,10 @@
+enum Major {
+    COMPUTERSCIENCE, BUSINESS, PSYCHOLOGY, COMMUNICATIONS 
+};
 public class Student {
     String name = "Unknown Student";
     float GPA;
     boolean isVeteran;
-    int lucky;
+    byte favoriteNumber;
+    Major major;
 }
