@@ -7,7 +7,7 @@ enum CarStyle {
 }
 
 public class Car {
-    private int horsePower;
+    private int horsePower = 180;
     private PowerType type;
     private CarStyle style;
 
@@ -18,7 +18,15 @@ public class Car {
 
     // this is a setter
     public void setHorsePower(int horsePower) {
-        this.horsePower = horsePower;
+        // Google told us HP is typically 180-200
+        if (horsePower < 180) {
+            this.horsePower = 180;
+        } else if (horsePower > 200) {
+            this.horsePower = 200;
+        } else {
+            this.horsePower = horsePower;
+        }
+
     }
 
     public PowerType getType() {
